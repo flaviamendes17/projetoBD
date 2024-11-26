@@ -1,7 +1,7 @@
 /* Carreiras */
 
 CREATE TABLE carreiras (
-    carreiras_id INT AUTO_INCREMENT PRIMARY KEY,
+    id_carreiras INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(250) NOT NULL,
     img_url TEXT NOT NULL,
     descricao_carreiras TEXT NOT NULL,
