@@ -1,10 +1,10 @@
 /* Carreiras */
 
-CREATE TABLE carreiras (
-    id_carreiras INT AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE carreira (
+    id_carreira INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(250) NOT NULL,
     img_url TEXT NOT NULL,
-    descricao_carreiras TEXT NOT NULL,
+    descricao_carreira TEXT NOT NULL
 );
 
 INSERT INTO carreiras (nome, img_url, descricao_carreiras) VALUES ('Eletroeletrônica', 'https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2020/09/Eletroeletronica_Freepik-scaled.jpg', 'Atuação: Eletroeletrônica envolve o estudo de circuitos eletrônicos e sistemas eletroeletrônicos. Os alunos adquirem habilidades em montagem, manutenção e análise de dispositivos, além de aprender sobre microcontroladores e circuitos integrados. Importância do inglês no Mercado: A terminologia técnica em inglês é fundamental para entender circuitos, dispositivos eletrônicos e inovações na área.'),
@@ -43,3 +43,14 @@ INSERT INTO carreiras (nome, img_url, descricao_carreiras) VALUES ('Eletroeletr�
 ('Relações Públicas', 'https://site-ingles-theta.vercel.app/img/relacoes-publicas.jpg', 'Atuação: Profissionais que gerenciam a imagem de uma empresa, organização ou pessoa, interagindo com a mídia e com diferentes públicos. O inglês é fundamental para trabalhar com a imprensa e públicos internacionais. Mercado: Agências de comunicação, empresas multinacionais, órgãos públicos.'),
 ('Relações Internacionais', 'https://site-ingles-theta.vercel.app/img/relacoes-internacionais3.jpg', 'Atuação: Profissionais de relações internacionais atuam na diplomacia, comércio exterior, ONGs e organismos internacionais, promovendo a cooperação entre países e facilitando negociações globais. Eles colaboram com empresas multinacionais e instituições para fortalecer parcerias e promover a integração econômica e política internacional. Mercado: Governos, embaixadas, consulados, empresas multinacionais e instituições internacionais.'),
 ('Negócios Internacionais', 'https://site-ingles-theta.vercel.app/img/negocios-internacionais7.webp', 'Atuação: Profissionais de negócios internacionais se especializam em comércio exterior, finanças globais e gestão de operações em um ambiente global. Eles são responsáveis por estabelecer e manter relações comerciais com parceiros internacionais, frequentemente utilizando o inglês como língua de comunicação. Mercado: Oportunidades estão disponíveis em multinacionais, bancos, empresas de comércio exterior e instituições financeiras.');
+
+/* Dicas */
+
+CREATE TABLE dica (
+    id_dica INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(250) NOT NULL,
+    descricao_dica TEXT NOT NULL,
+    img_url TEXT
+);
+
+INSERT INTO dica (titulo, descricao_dica, img_url) VALUES ()
