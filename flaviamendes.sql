@@ -15,16 +15,16 @@ CREATE TABLE membros (
     FOREIGN KEY (sobre_id) REFERENCES sobre_nos(id)
 );
 
-INSERT INTO sobre_nos (texto_principal, imagem_principal) VALUES ('Texto principal', 'https://i.postimg.cc/c1BJRwzP/foto-da-equipe.jpg');
+INSERT INTO sobre_nos (texto_principal, imagem_principal) VALUES ('Somos uma equipe de seis alunos do SENAI, cursando Desenvolvimento de Sistemas.Nosso objetivo é ajudar jovens estudantes a se prepararem para o vestibular,com foco no aprendizado da língua inglesa.Criamos esta página para facilitar esse importante processo de estudos.', 'https://i.ibb.co/xHj8SRy/foto-equipe.jpg');
 
 INSERT INTO membros (sobre_id, nome, foto, descricao)
 VALUES
-(1, 'Alejandra', 'images/alejandra.jpg', 'Desenvolvedora'),
-(1, 'Flavia', 'images/flavia.jpg', 'Scrum Master'),
-(1, 'Giovanna', 'images/giovanna.jpg', 'Desenvolvedora'),
-(1, 'Julia', 'images/julia.jpg', 'Product Owner'),
-(1, 'Luiz', 'images/luiz.jpg', 'Desenvolvedor');
-/*adicionar urls*/
+(1, 'Alejandra', 'https://github.com/juguarnieri/site-ingles/blob/main/img/barros.png?raw=true', 'Desenvolvedora'),
+(1, 'Flavia', 'https://github.com/juguarnieri/site-ingles/blob/main/img/mendes.png?raw=true', 'Scrum Master'),
+(1, 'Giovanna', 'https://raw.githubusercontent.com/juguarnieri/site-ingles/refs/heads/main/img/alba.png', 'Desenvolvedora'),
+(1, 'Julia', 'https://github.com/juguarnieri/site-ingles/blob/main/img/guarnieri.png?raw=true', 'Product Owner'),
+(1, 'Luiz', 'https://i.ibb.co/qCd1zr6/luiz.jpg', 'Desenvolvedor');
+
 
 /*entrevistas*/
 CREATE TABLE entrevistadores (
@@ -43,11 +43,10 @@ CREATE TABLE entrevistas (
     FOREIGN KEY (entrevistador_id) REFERENCES entrevistadores(id) ON DELETE SET NULL
 );
 
-/*Um entrevistador pode entrevistar vários entrevistados. relação (1:N)*/
-
+/*Um entrevistador pode entrevistar vários entrevistados. relação (1:N)*/ 
 
 INSERT INTO entrevistadores (nome, descricao) VALUES ('Flavia Mendes e Julia Guarnieri', 'Alunas do senai Valinhos, conhecendo mais sobre professoras de inglês.');
 
-INSERT INTO entrevistas (titulo, descricao, video, foto, entrevistador_id) VALUES ('Entrevista com professora Daniela', 'Entrevista com professora de inglês - Daniela', 'https://www.youtube.com/watch?v=3Q3J2s3J4j4', 'https://i.postimg.cc/3wZzvZ8V/entrevista.jpg', 1),
-('Entrevista com professora Tayna', 'Entrevista com professora de inglês - Tayna', 'https://www.youtube.com/watch?v=3Q3J2s3J4j4', 'https://i.postimg.cc/3wZzvZ8V/entrevista.jpg', 1),
-('Entrevista com professora Patricia', 'Entrevista com professora de inglês - Patricia', 'https://www.youtube.com/watch?v=3Q3J2s3J4j4', 'https://i.postimg.cc/3wZzvZ8V/entrevista.jpg', 1);
+INSERT INTO entrevistas (titulo, descricao, video, foto, entrevistador_id) VALUES ('Entrevista com professora Daniela', 'Entrevista com professora de inglês - Daniela', 'https://youtu.be/-3I8cMuG0FM?feature=shared', 'https://raw.githubusercontent.com/juguarnieri/site-ingles/refs/heads/main/img/Daniela.png', 1),
+('Entrevista com professora Tayna', 'Entrevista com professora de inglês - Tayna', 'https://youtu.be/BMiltqcugBs?feature=shared', 'https://i.ibb.co/QpdBvfv/tayna.jpg', 1),
+('Entrevista com professora Patricia', 'Entrevista com professora de inglês - Patricia', 'https://youtu.be/RQkLnsFJ3uM?feature=shared', 'https://i.ibb.co/HXN7PFH/patricia.jpg', 1);
