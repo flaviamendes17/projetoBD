@@ -1,0 +1,32 @@
+/* Tabelas da página Sobre Nós */
+
+Entidade = membros:
+• id = Atributo
+• sobre_id = Atributo
+• nome = Atributo
+• foto = Atributo
+• descricao = Atributo
+
+Entidade = entrevistadores:
+• id = Atributo
+• nome = Atributo
+• descricao = Atributo
+
+Entidade = entrevistas:
+• id = Atributo
+• titulo = Atributo
+• descricao = Atributo
+• video_url = Atributo
+• foto = Atributo
+• entrevistador_id = Atributo
+
+/* Tabelas da página de Simulados */
+
+Entidade = simulados:
+• id = Atributo
+• nivel nivel_enum = Atributo
+• numero_pergunta = Atributo
+• titulo = Atributo
+• texto_pergunta = Atributo
+• pergunta_texto = Atributo
+• url = Atributo
