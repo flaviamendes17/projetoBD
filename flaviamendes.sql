@@ -1,13 +1,13 @@
 /*sobre nos*/
 
 CREATE TABLE sobre_nos (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     texto_principal TEXT NOT NULL,
     imagem_principal VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE membros (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     sobre_id INT,
     nome VARCHAR(255) NOT NULL,
     foto VARCHAR(255) NOT NULL,
@@ -28,13 +28,13 @@ VALUES
 
 /*entrevistas*/
 CREATE TABLE entrevistadores (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
     descricao TEXT NOT NULL
 );
 
 CREATE TABLE entrevistas (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     titulo VARCHAR(255) NOT NULL,
     descricao TEXT NOT NULL,
     video_url VARCHAR(255) NOT NULL,
@@ -47,6 +47,6 @@ CREATE TABLE entrevistas (
 
 INSERT INTO entrevistadores (nome, descricao) VALUES ('Flavia Mendes e Julia Guarnieri', 'Alunas do senai Valinhos, conhecendo mais sobre professoras de inglês.');
 
-INSERT INTO entrevistas (titulo, descricao, video, foto, entrevistador_id) VALUES ('Entrevista com professora Daniela', 'Entrevista com professora de inglês - Daniela', 'https://youtu.be/-3I8cMuG0FM?feature=shared', 'https://raw.githubusercontent.com/juguarnieri/site-ingles/refs/heads/main/img/Daniela.png', 1),
+INSERT INTO entrevistas (titulo, descricao, video_url, foto, entrevistador_id) VALUES ('Entrevista com professora Daniela', 'Entrevista com professora de inglês - Daniela', 'https://youtu.be/-3I8cMuG0FM?feature=shared', 'https://raw.githubusercontent.com/juguarnieri/site-ingles/refs/heads/main/img/Daniela.png', 1),
 ('Entrevista com professora Tayna', 'Entrevista com professora de inglês - Tayna', 'https://youtu.be/BMiltqcugBs?feature=shared', 'https://i.ibb.co/QpdBvfv/tayna.jpg', 1),
 ('Entrevista com professora Patricia', 'Entrevista com professora de inglês - Patricia', 'https://youtu.be/RQkLnsFJ3uM?feature=shared', 'https://i.ibb.co/HXN7PFH/patricia.jpg', 1);
