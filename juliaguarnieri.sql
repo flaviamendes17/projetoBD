@@ -6,7 +6,8 @@ CREATE TABLE simulados (
     id SERIAL PRIMARY KEY,
     dificuldade VARCHAR(150) NOT NULL,
     descricao VARCHAR(150) NOT NULL,
-    url VARCHAR(255) NOT NULL
+    url VARCHAR(255) NOT NULL,
+    url_imagem_nivel VARCHAR(255) NOT NULL
 );
 
 
@@ -32,11 +33,11 @@ CREATE TABLE questoes (
 
 -- INSEÇÕES NAS TABELAS:
 
-INSERT INTO simulados (dificuldade, descricao, url) VALUES 
-('NÍVEL BÁSICO', 'Comece testando seus conhecimento com um simulado básico.', 'https://site-ingles-theta.vercel.app/pages_html/simulado_basico.html'),
-('NÍVEL INTERMEDIÁRIO', 'Está na hora de se desafiar mais, faça esse simulado intermediário.', 'https://site-ingles-theta.vercel.app/pages_html/simulado_intermediario.html'),
-('NÍVEL AVANÇADO', 'Tem ido muito bem, que tal testar seu inglês avançado?', 'https://site-ingles-theta.vercel.app/pages_html/simulado_avancado.html'),
-('NÍVEL PROFICIENTE', 'Agora resta a parte final para ver se aprendeu bem, teste tudo que aprendeu com esse simulado de nível proficiente.', 'https://site-ingles-theta.vercel.app/pages_html/simulado_proficiente.html');
+INSERT INTO simulados (dificuldade, descricao, url, url_imagem_nivel) VALUES 
+('NÍVEL BÁSICO', 'Comece testando seus conhecimento com um simulado básico.', 'https://site-ingles-theta.vercel.app/pages_html/simulado_basico.html', 'https://thumbs.dreamstime.com/b/conceito-de-teste-cor-desenho-animado-vetor-exame-quiz-design-achatado-estilo-m%C3%A3os-humanas-segurando-caneta-e-papel-ilustra%C3%A7%C3%A3o-208845043.jpg'),
+('NÍVEL INTERMEDIÁRIO', 'Está na hora de se desafiar mais, faça esse simulado intermediário.', 'https://site-ingles-theta.vercel.app/pages_html/simulado_intermediario.html', 'https://img.freepik.com/vetores-premium/resultados-do-teste-de-exame-escolar_40816-277.jpg?semt=ais_hybrid'),
+('NÍVEL AVANÇADO', 'Tem ido muito bem, que tal testar seu inglês avançado?', 'https://site-ingles-theta.vercel.app/pages_html/simulado_avancado.html', 'https://blog.unipar.br/wp-content/uploads/2020/01/GettyImages-1271011451-1-445x445.jpg'),
+('NÍVEL PROFICIENTE', 'Agora resta a parte final para ver se aprendeu bem, teste tudo que aprendeu com esse simulado de nível proficiente.', 'https://site-ingles-theta.vercel.app/pages_html/simulado_proficiente.html', 'https://image.slidesdocs.com/responsive-images/background/paper-college-students-campus-june-classroom-student-powerpoint-background_925b62983f__960_540.jpg');
 
 SELECT * FROM simulados;
 
