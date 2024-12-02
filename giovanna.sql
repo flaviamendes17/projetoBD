@@ -28,23 +28,14 @@ CREATE TABLE links (
     FOREIGN KEY (membro_id) REFERENCES membros(id)
 );
 
+INSERT INTO links (membro_id, email, instagram, linkedin, github) VALUES (1, 'alejandra.barros@aluno.senai.br', '4yo_b', 'Alejandra Barros', '4yo_b');
+INSERT INTO links (membro_id, email, instagram, linkedin, github) VALUES (2, 'flavia.r.mendes@aluno.senai.br', 'flaviaramendes', 'Flavia Mendes', 'flaviamendes17');
+INSERT INTO links (membro_id, email, instagram, linkedin, github) VALUES (3, 'giovanna.a.gomes6@aluno.senai.br', '_gialbag', 'Giovanna Alba Gomes', 'AlbaGomesG');
+INSERT INTO links (membro_id, email, instagram, linkedin, github) VALUES (4, 'julia.guarnieri@aluno.senai.br', 'julia_guar', 'Júlia Guarnieri', 'juguarnieri');
+INSERT INTO links (membro_id, email, instagram, linkedin, github) VALUES (5, 'luiz.g.carvalho11@aluno.senai.br', NULL, 'Luiz Gabriel Lopes Carvalho', 'LuizGabrielLopes');
+
+
 /* Teste 1 */
-
-SELECT
-    m.sobre_id,
-    m.nome,
-    m.foto,
-    m.descricao,
-    (SELECT l.email FROM links l WHERE l.membro_id = m.id) AS email,
-    (SELECT l.instagram FROM links l WHERE l.membro_id = m.id) AS instagram,
-    (SELECT l.linkedin FROM links l WHERE l.membro_id = m.id) AS linkedin,
-    (SELECT l.github FROM links l WHERE l.membro_id = m.id) AS github
-FROM
-    membros m
-WHERE
-    m.id = 1;
-
-/* Teste 2 */
 
     SELECT 
     m.id 
