@@ -45,7 +45,7 @@ INSERT INTO questoes (titulo, fonte_questao, texto_auxiliar, enunciado, alternat
 VALUES 
 ('QUESTÃO 1', '(Enem 2021)', NULL, 'A presença de at odds with na fala da personagem do cartum revela o(a):', ' a) necessidade de acessar informações confiáveis.', 'b) dificuldade de conciliar diferentes anseios.', 'c) desejo de dominar novas tecnologias.', 'd) desafio de permanecer imparcial.', 'e) vontade de ler notícias positivas.', 'B', 'https://blogger.googleusercontent.com/img/aAVvXsEhCvRSIDqYEwlUR-cW3xR4EpXkw35jJeGURtAx8e4uvrtKEkBvhGIM13Be357bLKauia5nZqyvEoG6-nkT9W8dIbSmF6UIq_zG2SDzKclfJhtK3WilvF0QDtksY6qDgMH7Z-eTibyCaY5oRWwpL7tFwsE8miV0qhofs9rMicZkzCusC_1_Ym0zlEjoL=s600', 1),
 
-('QUESTÃO 2', '(Enem 2019)', 'A pet is certainly a great friend. After a difficult day, pet owners quite literally feel the love. In fact, for nearly 25 years, research has shown that living with pets provides certain health benefits. Pets help lower blood pressure and lessen anxiety. They boost our immunity. They can even help you get dates. Allergy Fighters: A growing number of studies have suggested that kids growing up in a home with "furred animals" will have less risk of allergies and asthma. Date Magnets: Dogs are great for making love connections. Forget Internet matchmaking – a dog is a natural conversation starter. Dogs for the Aged: Walking a dog or just caring for a pet – for elderly people who are able – can provide exercise and companionship. Good for Mind and Soul: Like any enjoyable activity, playing with a dog can elevate levels of serotonin and dopamine – nerve transmitters that are known to have pleasurable and calming properties. Good for the Heart: Heart attack patients who have pets survive longer than those without, according to several studies.', 'Ao discutir sobre a influência de animais de estimação no bem-estar do ser humano, a autora, a fim de fortalecer seus argumentos, utiliza palavras e expressões como research, a growing number of research e several studies com o objetivo de:',  ' a) mostrar que animais de estimação ajudam na cura de doenças como alergias e asma.', 'b) esclarecer sobre o modo como os idosos devem se relacionar com animais de estimação.','c) fornecer dados sobre os impactos de animais de estimação nas relações amorosas.', 'd) explicar como o contato com animais de estimação pode prevenir ataques cardíacos.',  'e) convencer sobre os benefícios da adoção de animais de estimação para a saúde.', 'E', NULL, 1),
+('QUESTÃO 2', '(Enem 2019)', 'A pet is certainly a great friend. After a difficult day, pet owners quite literally feel the love. In fact, for nearly 25 years, research has shown that living with pets provides certain health benefits. Pets help lower blood pressure and lessen anxiety. They boost our immunity. They can even help you get dates. Allergy Fighters: A growing number of studies have suggested that kids growing up in a home with furred animals will have less risk of allergies and asthma. Date Magnets: Dogs are great for making love connections. Forget Internet matchmaking – a dog is a natural conversation starter. Dogs for the Aged: Walking a dog or just caring for a pet – for elderly people who are able – can provide exercise and companionship. Good for Mind and Soul: Like any enjoyable activity, playing with a dog can elevate levels of serotonin and dopamine – nerve transmitters that are known to have pleasurable and calming properties. Good for the Heart: Heart attack patients who have pets survive longer than those without, according to several studies.', 'Ao discutir sobre a influência de animais de estimação no bem-estar do ser humano, a autora, a fim de fortalecer seus argumentos, utiliza palavras e expressões como research, a growing number of research e several studies com o objetivo de:',  ' a) mostrar que animais de estimação ajudam na cura de doenças como alergias e asma.', 'b) esclarecer sobre o modo como os idosos devem se relacionar com animais de estimação.','c) fornecer dados sobre os impactos de animais de estimação nas relações amorosas.', 'd) explicar como o contato com animais de estimação pode prevenir ataques cardíacos.',  'e) convencer sobre os benefícios da adoção de animais de estimação para a saúde.', 'E', NULL, 1),
 
 ('QUESTÃO 3', '(Enem 2016)', 'BOGOF is used as a noun as in There are some great bogofs on at the supermarket or an adjective, usually with a word such as offer or deal — there are some great bogof offers in store . When you combine the first letters of the words in a phrase or the name of an organisation, you have an acronym. Acronyms are spoken as a word so NATO (North Atlantic Treaty Organisation) is not pronounced N-A-T-O. We say NATO. Bogof, when said out loud, is quite comical for a native speaker, as it sounds like an insult, Bog off! meaning go away, leave me alone, slightly childish and a little old-fashioned. BOGOF is the best-known of the supermarket marketing strategies. The concept was first imported from the USA during the 1970s recession, when food prices were very high. It came back into fashion in the late 1990s, led by big supermarket chains trying to gain a competitive advantage over each other. Consumers were attracted by the idea that they could get something for nothing. Who could possibly say no?',' Considerando-se as informações do texto, a expressão bogof é usada para:',  ' a) anunciar mercadorias em promoção.',  'b) pedir para uma pessoa se retirar.',  'c) comprar produtos fora de moda.',  'd) indicar recessão na economia.',  'e) chamar alguém em voz alta.', 'A', NULL, 1),
 
@@ -77,6 +77,151 @@ VALUES
 
 
 SELECT * FROM questoes;
+-- Nível Avançado
+INSERT INTO questoes (titulo, fonte_questao, texto_auxiliar, enunciado, alternativa_a, alternativa_b, alternativa_c, alternativa_d, alternativa_e, resposta_correta, url_imagem, id_simulado) 
+VALUES 
+('QUESTÃO 1', '(IBFC INEP 2012)', NULL, 'The alternative that brings the sentences with the same meaning of “My cousin recovered from his health problems because he has completely changed his lifestyle” is', 
+'a) If my cousin didn t have change his lifestyle completely, he wouldn t recover from his health problems.', 
+'b) If my cousin hasn t completely changed his lifestyle, he couldn t have recovered from his health problems.', 
+'c) If my cousin hasn t completely changed his lifestyle, he wouldn t have recovered from his health problems.', 
+'d) If my cousin hadn t completely changed his lifestyle, he wouldn t have recovered from his health problems.', 
+'e) If my cousin hadn t completely changed his lifestyle, he wouldn t recovered from his health problems.', 
+'D', NULL, 3),
+
+('QUESTÃO 2', '(ADM&TEC 2024)', 'Netflix is trying to prove to the world that it s all grown up
+
+Netflix is trying to persuade Wall Street that it is now all grown up. After squeezing out millions of additional subscribers via its password sharing crackdown and through the introduction of cheaper advertiser-supported plans, the streamer knows that its growth spurts are coming to an end — and now it wants investors to stop obsessing over those pesky membership numbers and instead focus on other metrics.
+In our early days, when we had little revenue or profit, membership growth was a strong indicator of our future potential. But now we are generating very substantial profit and free cash flow. We are also developing new revenue streams like advertising and our extra member feature, so memberships are just one component of our growth, Netflix told shareholders as it reported quarterly earnings.
+To that end, Netflix said that it will no longer report quarterly subscriber numbers, starting in 2025. Alas, the metric that Wall Street has forever judged Netflix on the metric that prompted legacy media companies to burn endless piles of cash in their bids to compete with the streamer — will be retired. The decision to shut off transparency on the metric represents a significant turning point in the streaming revolution. For years, Netflix has prided itself on being extraordinarily transparent. Now it is aiming to hold its cards closer to its chest. And given that streaming giant is the trendsetter in the space, one could expect that other media companies will be inspired by the company s move and also opt to cease reporting such data.
+To be fair, what Netflix is saying is not necessarily off base either. As the company shifts its business model away from subscriptions and toward advertising and other revenue streams, it makes sense to consider how much time users are spending on the service. The more content a user consumes on Netflix, the more likely they are to continue paying for the service, and the more money Netflix then makes from that single subscriber. We are focused on revenue and operating margin as our primary financial metrics — and engagement (i.e. time spent) as our best proxy for customer satisfaction,” Netflix underscored in its letter to shareholders.
+Regardless, less transparency in an already opaque industry is not ideal. The walled garden of streaming already lacks the same detailed viewership data that Nielsen collects on linear television broadcasters. Now, visibility into the streaming world will get even dimmer.
+The announcement from Netflix managed to overshadow its otherwise stellar quarter. The company handily beat expectations and added a staggering 9.3 million subscribers, meaning it now boasts nearly 270 million in total. Netflix also beat analyst expectations on both earnings and revenue. However, it was not all good news. Netflix forecasted its subscriber growth to be lower in quarter two, chalking it up to “typical seasonality.” That led the stock to slide nearly 5% in after-hours trading.
+Whether typical seasonality” is solely to blame, or whether the streamer is simply starting to hit a ceiling, is hard to tell. Perhaps it is a mix of both. Whatever the cause, the stock sliding on the less-than-ideal outlook is a prime example of why Netflix wants Wall Street to stop focusing on its subscriber numbers. And, in one year s time, investors won t have a choice.', 'Based on Text, mark the statements below as True (T) or False (F). ( ) Netflix s steps might lead other streaming companies to crack on reporting quarterly subscriber numbers.
+( ) Excluding engagement, being less transparent is the key for Netflix to maintain its customer satisfaction.
+( ) Netflix wants investors to stop obsessing over membership numbers and instead focus on other metrics.
+( ) Falling short of expectations, the streaming company added a staggering 9.3 million subscribers.', 
+'a) F. T. F. T.', 
+'b) F. F. T. F.', 
+'c) T. F. T. F.', 
+'d) T. T. F. T.', 
+NULL, 
+'B', NULL, 3),
+
+('QUESTÃO 3', '(CONTEMAX 2024)', NULL, 'Lisa is discussing instructions from her supervisor with a colleague. Convert the direct speech into reported speech. and choose the correct sentence.', 
+'a) My supervisor said that we could prepare the lesson plans for next week.', 
+'b) My supervisor said that we had to prepare the lesson plans for next week.', 
+'c) My supervisor said that we must to prepare the lesson plans for next week.', 
+'d) My supervisor said that we has to prepare the lesson plans for next week.', 
+'e) My supervisor said that we might prepare the lesson plans for next week.', 
+'B', NULL, 3),
+
+('QUESTÃO 4', '(FUVEST 2023)', 'We ve been given no shortage of digital tools that should, in theory, help us work better, with more focus and efficiency, and connect us more easily with our colleagues. Instead, email, instant messaging, remote-meeting apps, work-flow and project-management software can feel like buckets with holes in the bottom, maddeningly inadequate to the task of keeping us from drowning in work. It is clear that something in the great digital-workplace experiment has gone wrong. Or maybe it is more accurate to say that it is still too early to expect that we would have figured out how to make things go right. We are working now with new technologies that only emerged in the 90s, says Cal Newport, a Georgetown computer-science professor. The idea that we immediately figured out the best way to use them is ahistorical. Of course we haven t gotten it right yet.
+Disponível em http://www.nytimes.com (adaptado).', 'A expressão sublinhada no trecho The idea that we immediately figured out the best way to use them is ahistorical pode ser substituída, sem prejuízo do sentido, por', 
+'a) disturbed', 
+'b) constructed.', 
+'c) failed.', 
+'d) made.', 
+'e) understood.', 
+'E', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0FwQ9OMsF-3jFrN1ntdLWy4nXM4u8F3qsxlHcsO5s0TgX_bJO', 3),
+
+('QUESTÃO 5', '(FUNDATEC 2024)', 'In the image below we can see a boy talking to the Google Home Mini, which is an electronic device, and then with a tiger:', 'Which of the alternatives below correctly fills out the gaps in the dialogue, from top to bottom?', 
+'a) to – no preposition – towards – to', 
+'b) to – on – to – of', 
+'c) no preposition – to – with – of', 
+'d) to – no preposition – with – of', 
+'e) no preposition – onto – with – to', 
+'B', NULL, 3),
+
+('QUESTÃO 6', '(PUC - SP 2017)', NULL, 'O candidato não conseguiu colocar a foto no passaporte porque:', 
+'a) Excedeu o número de tentativas que a máquina permitia.', 
+'b) Possivelmente não teve suas características étnico-raciais reconhecidas pelo programa.', 
+'c) Não observou os critérios técnicos necessários para poder completar o procedimento.', 
+'d) Ignorou a necessidade de percorrer os itens constantes dos aspectos de segurança antes de fazer a próxima tentativa.', 
+NULL, 
+'B', 'https://d23vy2bv3rsfba.cloudfront.net/questoes_imagens/0_5b85b68d2f8153e441e0c5fbfd6fbda0_294928.jpg.jpeg', 3),
+
+('QUESTÃO 7', '(PUC - SP 2017)', NULL, 'O infográfico tem como objetivo principal:', 
+'a) Dar exemplos de tipos de bullying eletrônico para que os pais possam se precaver.', 
+'b) Mostrar ao adolescente assediado que ele não está só.', 
+'c) Chamar a atenção da população para o fato de que o bullying é uma realidade perigosa.', 
+'d) Mostrar à população que o combate ao bullying depende da ação adequada de cada pessoa individualmente.', 
+NULL, 
+'D', 'https://d23vy2bv3rsfba.cloudfront.net/questoes_imagens/0_d11a7f76a7b17decf57dc6442bf4b176_296094.jpg.jpeg', 3),
+
+('QUESTÃO 8', '(UERJ 2015)', NULL, 'Modal verbs can be used to refer to a speaker s attitude. The modal should indicates that Calvin believes his knowledge of the bad quality of the TV show would be characterized as:', 
+'a) Desirable.', 
+'b) Probable.', 
+'c) Surprising.', 
+'d) Mandatory.', 
+NULL, 
+'A', 'https://d23vy2bv3rsfba.cloudfront.net/questoes_imagens/0_fd031b9f66302db9beec5dcc6a100d23_110091.jpg.jpeg', 3),
+
+('QUESTÃO 9', '(VUNESP - 2014)', 'Leia o texto para responder à questão. The Institute for Supply Management s (ISM) manufacturing index rose to 53.2 from 51.3 in January. A reading above 50 indicates expansion. Separate data showed construction spending rose slightly in January, helped by residential construction. Manufacturing and construction are key to the US economy and there were fears that severe weather across many parts of the US may have hurt the sectors. Bradley Holcomb, chair of ISM s survey committee, said that while several manufacturers said severe weather was impacting their business, “other comments reflect optimism in terms of demand and growth in the near term”. Meanwhile, data released by the US Department of Commerce, showed that construction spending rose 0.1% in January, from December. Compared to the same month last year, construction spending was up 9.3%. However, the bad weather conditions impacted car sales in February with General Motors, Toyota and Ford all posting declines in their deliveries. But the drop in sales was less than expected and manufacturers were upbeat about the prospects in the coming months. “February auto sales emerged from a chill in the second half of the month, positioning the industry for a strong March,” said Bill Fay, general manager at Toyota, which saw a fall in deliveries of 4% during the month. General Motors sales fell 1%, compared to analysts  forecast of a 6% drop. Chrysler and Nissan Motors beat the trend with sales increases of 11% and 16% respectively. Analysts said that overall car sales during the month had been helped by incentives and discounts offered by dealers to lure customers to showrooms in an attempt to cushion the impact of the severe weather conditions. However, as weather conditions improve, the discounts will reduce.', 'The third paragraph shows that', 
+'a) Auto manufacturers were already expecting a drop in sales for February.', 
+'b) GM, Ford and Toyota expected to sell more cars in February because of the winter.', 
+'c) Car sales are expected to drop in the months after February when the winter finishes.', 
+'d) Chrysler sold more cars than Toyota in February, but Nissan sold more than them all.', 
+'e) General Motors sold 6% fewer cars than Toyota in February.', 
+'A', NULL, 3),
+
+('QUESTÃO 10', '(PUC Campinas - 2016)', 'Leia o texto para responder à questão.
+The colors of the rainbow so pretty in the sky
+Are also on the faces of people passing .. I...
+I see friends ..II.. hands
+Saying, how do you do?
+They are really saying,
+I love you.', 'The word that correctly fills the blank ..II.. is', 
+'a) Waving.', 
+'b) Shaking.', 
+'c) Grabbing.', 
+'d) Clapping.', 
+'e) Raising.', 
+'B', NULL, 3),
+
+('QUESTÃO 11', '(Instituto Access - 2024)', NULL, 'Choose the correct option to complete the sentence: “Sadly, many people __________ serious illnesses due to lack of early detection.”', 
+'a) Die from.', 
+'b) Come down with.', 
+'c) Contract.', 
+'d) Are diagnosed with.', 
+NULL, 
+'A', NULL, 3),
+
+('QUESTÃO 12', '(Instituto Access - 2024)', 'On Friday, a major tech failure ________ services worldwide and highlighted the vulnerability of interconnected technologies.
+Cybersecurity firm CrowdStrike apologized after an update to its antivirus software, which protects Microsoft Windows devices from attacks, caused a global ________ .
+This led to thousands of flight cancellations and delays and affected banking, healthcare, and payment systems. Although the software bug has been fixed, experts warn that manually ________ each affected computer will take significant time and effort. Microsoft estimated that 8.5 million computers globally were impacted by the ________ , making it the worst cyber event in history. The UK s National Cyber Security Centre and Germany s IT security agency have warned that ________ might exploit the situation. Despite the fix, it will take time to resolve all issues and clear backlogs. It is important to be prepared for such disruptions in the future and have resilient systems.
+Available at: https://www.newsinlevels.com/products/global-it-outage-level-3/. Accessed: July 25, 2024.', 'Read and mark the option which fills in the blanks accordingly.', 
+'a) Restarted - blackout - installing - news - robbers.', 
+'b) Disrupted - outage - rebooting - glitch - scammers.', 
+'c) Installed - chaos - cleaning - fact - thieves.', 
+'d) Disturbed - news - reinstalling - story - programmers.', 
+'e) Destroyed - coup - sending - failure - criminals.', 
+'B', NULL, 3),
+
+('QUESTÃO 13', '(Instituto Access - 2024)', NULL, 'Analise as sentenças e selecione a opção que apresenta a conjugação INCORRETA do tempo verbal perfeito.', 
+'a) They hadn t eaten before the plane landed.', 
+'b) I ll have finished my report by this time next week.', 
+'c) If you had studied for your exam, you would have passed.', 
+'d) He s written ten pages of the report.', 
+'e) They ve are married for nearly fifty years.', 
+'E', NULL, 3),
+
+('QUESTÃO 14', '(VUNESP - 2013)', 'A transformer has a primary winding circuit with 200 turns and a secondary winding circuit with 10 turns. In an ideal, lossless, transformer model, the magnetic core permeability is infinite despite the voltages applied to the windings, the two windings are perfectly coupled and there are no internal resistance in the condutors. In such transformer, when a sinusoidal voltage is applied at the secondary winding with an amplitude of 5,0 [V] RMS, the RMS voltage in the primary winding terminals is equal to 100,0 [V].', 'Com relação a esse texto, assinale a alternative correta.', 
+'a) No transformador ideal, é aplicada uma tensão não senoidal no enrolamento secundário, com amplitude de 5,0 [V] eficazes.', 
+'b) No transformador ideal, é aplicada uma tensão senoidal no enrolamento primário, com amplitude de 5,0 [V] eficazes.', 
+'c) O transformador ideal, sem perdas, apresenta permeabilidade infinita, independentemente da intensidade das tensões aplicadas nos enrolamentos, que são perfeitamente acoplados, sem nenhuma resistência interna em seus condutores.', 
+'d) O transformador ideal, sem perdas, apresenta permissividade infinita, que depende da intensidade das tensões aplicadas nos enrolamentos, que são perfeitamente acoplados, sem nenhuma resistência interna em seus condutores.', 
+'e) Um transformador apresenta um circuito magnético primário com 200 voltas e um circuito magnético secundário com 10 voltas.', 
+'C', NULL, 3),
+
+('QUESTÃO 15', '(VUNESP - 2023)', 'Leia o texto para responder a questão.
+Learning strategies are defined as “specific actions, behaviors, steps, or techniques—such as seeking out conversation partners, or giving one self-encouragement to tackle a difficult language task—used by students to enhance their own learning. When the learner consciously chooses strategies that suit his or her learning style and the L2 task at hand, these strategies become a useful toolkit for active, conscious, and purposeful self-regulation of learning. Learning strategies can be classified into six types; the compensatory strategies, for example, are those that help the learner make up for missing knowledge.
+A given strategy is neither good nor bad; it is neutral until the context of its use is thoroughly considered. What makes a strategy positive and helpful for a given learner? A strategy is useful if the following conditions are present: (a) the strategy relates to the L2 task at hand; (b) the strategy fits the particular student s learning style preferences to one degree or another; and (c) the student employs the strategy effectivety and links it with other relevant strategies. Strategies that fulfill these conditions “make learning easier, faster, more enjoyable, more self-directed, more effective, and more transferable to new situations” (Oxford 1990, p. 8). Learning strategies can also enable students to become more independent and lifelong learners.', 'In a reading class, the text is about “World Cup host countries in the 21st century. Aware of the fact that a strategy is useful if it relates to the L2 task at hand , the teacher coherently offers the following instruction to develop learners  ability to scan texts in English:', 
+'a) “Focus on the text s key ideas and ignore other elaborate details”.', 
+'b) “Carefully read the title and the first paragraph to anticipate the content of subsequent paragraphs”.', 
+'c) “Activate your prior knowledge to create a mental image about text content”.', 
+'d) “Compare the content of this text with texts you have read in Portuguese about the same theme”.', 
+'e) “Identify the countries which have held World Cup Champioships in the last 22 years”.', 
+'E', NULL, 3);
 
 --Nível Proficiente
 
@@ -132,7 +277,7 @@ Adapted from: Climate of conspiracy: A meta-analysis of the consequences of beli
 'D) Skeptical people.', 
 'E) Climate denials.', 'C', NULL, 4),
 
-('QUESTÃO 7', '(ITA 2020 - 1ª Fase)', 'About seven years ago, three researchers at the University of Toronto built a system that could analyze thousands of photos and teach itself to recognize everyday objects, like dogs, cars and flowers. The system was so effective that Google bought the tiny start-up these researchers were only just getting off the ground. And soon, their system sparked a technological revolution. Suddenly, machines could "see" in a way that was not possible in the past.
+('QUESTÃO 7', '(ITA 2020 - 1ª Fase)', 'About seven years ago, three researchers at the University of Toronto built a system that could analyze thousands of photos and teach itself to recognize everyday objects, like dogs, cars and flowers. The system was so effective that Google bought the tiny start-up these researchers were only just getting off the ground. And soon, their system sparked a technological revolution. Suddenly, machines could see in a way that was not possible in the past.
 This made it easier for a smartphone app to search your personal photos and find the images you were looking for. It accelerated the progress of driverless cars and other robotics. And it improved the accuracy of facial recognition services, for social networks like Facebook and for the country s law enforcement agencies. But soon, researchers noticed that these facial recognition services were less accurate when used with women and people of color. Activists raised concerns over how companies were collecting the huge amounts of data needed to train these kinds of systems. Others worried these systems would eventually lead to mass surveillance or autonomous weapons.
 Fonte: Matz, Cade. Seeking Ground Rules for A. 1. www.nvtimes.com, 01/03/2019. Adaptado. Acessado em Agosto/2019.', 
 'De acordo com as informações do texto, selecione a alternativa que melhor complete a afirmação: The new system proved to be less precise when:', 
