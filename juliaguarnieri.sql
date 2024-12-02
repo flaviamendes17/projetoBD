@@ -10,7 +10,6 @@ CREATE TABLE simulados (
     url_imagem_nivel VARCHAR(255) NOT NULL
 );
 
-
 -- TABELA DE QUESTÕES 
 CREATE TABLE questoes (
     id_questoes SERIAL PRIMARY KEY,
@@ -29,7 +28,6 @@ CREATE TABLE questoes (
 
     FOREIGN KEY (id_simulado) REFERENCES simulados(id)
 );
-
 
 -- INSEÇÕES NAS TABELAS:
 
@@ -267,7 +265,8 @@ SELECT
     s.descricao, 
     s.dificuldade, 
     s.url, 
-    q.titulo AS titulo_questao, 
+    s.url_imagem_nivel,
+    q.titulo, 
     q.fonte_questao, 
     q.texto_auxiliar, 
     q.enunciado, 
@@ -281,4 +280,5 @@ SELECT
 FROM 
     simulados s
 JOIN 
-    questoes q ON q.id_simulado = s.id;
+    questoes q ON s.id = q.id_simulado;
+

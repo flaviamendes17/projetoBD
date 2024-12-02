@@ -1,7 +1,7 @@
-/* Formulário de formulário */
+/* Tabela de formulário */
 
 CREATE TABLE formulario (
-    id INT AUTO_INCREMENT PRIMARY KEY, 
+    id SERIAL PRIMARY KEY, 
     nome VARCHAR(100) NOT NULL, 
     email VARCHAR(100) NOT NULL, 
     mensagem TEXT NOT NULL
@@ -10,7 +10,7 @@ CREATE TABLE formulario (
 /* Membros da equipe - pego da página sobre nós */
 
 CREATE TABLE membros (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     sobre_id INT,
     nome VARCHAR(255) NOT NULL,
     foto VARCHAR(255) NOT NULL,
@@ -18,8 +18,10 @@ CREATE TABLE membros (
     FOREIGN KEY (sobre_id) REFERENCES sobre_nos(id)
 );
 
+/* Tabela de links que está ligada aos membros da equipe */
+
 CREATE TABLE links (
-    id INT PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     membro_id INT,
     email VARCHAR(100), 
     instagram VARCHAR(100),
@@ -28,32 +30,23 @@ CREATE TABLE links (
     FOREIGN KEY (membro_id) REFERENCES membros(id)
 );
 
+INSERT INTO links (membro_id, email, instagram, linkedin, github) VALUES (1, 'alejandra.barros@aluno.senai.br', '4yo_b', 'Alejandra Barros', '4yo_b');
+INSERT INTO links (membro_id, email, instagram, linkedin, github) VALUES (2, 'flavia.r.mendes@aluno.senai.br', 'flaviaramendes', 'Flavia Mendes', 'flaviamendes17');
+INSERT INTO links (membro_id, email, instagram, linkedin, github) VALUES (3, 'giovanna.a.gomes6@aluno.senai.br', '_gialbag', 'Giovanna Alba Gomes', 'AlbaGomesG');
+INSERT INTO links (membro_id, email, instagram, linkedin, github) VALUES (4, 'julia.guarnieri@aluno.senai.br', 'julia_guar', 'Júlia Guarnieri', 'juguarnieri');
+INSERT INTO links (membro_id, email, instagram, linkedin, github) VALUES (5, 'luiz.g.carvalho11@aluno.senai.br', NULL, 'Luiz Gabriel Lopes Carvalho', 'LuizGabrielLopes');
+
+
 /* Teste 1 */
 
-SELECT
-    m.sobre_id,
-    m.nome,
-    m.foto,
-    m.descricao,
-    (SELECT l.email FROM links l WHERE l.membro_id = m.id) AS email,
-    (SELECT l.instagram FROM links l WHERE l.membro_id = m.id) AS instagram,
-    (SELECT l.linkedin FROM links l WHERE l.membro_id = m.id) AS linkedin,
-    (SELECT l.github FROM links l WHERE l.membro_id = m.id) AS github
-FROM
-    membros m
-WHERE
-    m.id = 1;
-
-/* Teste 2 */
-
     SELECT 
-    m.id 
-    m.nome
-    m.foto 
-    m.descricao 
-    l.email  
-    l.instagram 
-    l.linkedin 
+    m.id, 
+    m.nome,
+    m.foto, 
+    m.descricao,
+    l.email, 
+    l.instagram,
+    l.linkedin, 
     l.github 
 FROM 
     membros m
@@ -64,11 +57,11 @@ ON
 
 /* Adicionando as informações pedidas no formulário */
 
-INSERT INTO contato (nome, email, mensagem) VALUES ('Thiago', 'thiago@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.');
-INSERT INTO contato (nome, email, mensagem) VALUES ('Giovanna', 'giovanna@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.');
-INSERT INTO contato (nome, email, mensagem) VALUES ('Maria', 'maria@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.');
-INSERT INTO contato (nome, email, mensagem) VALUES ('Marcelo', 'marcelo@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.');
-INSERT INTO contato (nome, email, mensagem) VALUES ('Eduardo', 'eduardo@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.');
+INSERT INTO formulario (nome, email, mensagem) VALUES ('Thiago', 'thiago@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.');
+INSERT INTO formulario (nome, email, mensagem) VALUES ('Giovanna', 'giovanna@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.');
+INSERT INTO formulario (nome, email, mensagem) VALUES ('Maria', 'maria@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.');
+INSERT INTO formulario (nome, email, mensagem) VALUES ('Marcelo', 'marcelo@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.');
+INSERT INTO formulario (nome, email, mensagem) VALUES ('Eduardo', 'eduardo@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.');
 
 /* Adicionando os integrantes da tabela de membros - pego da página sobre nós */
 
