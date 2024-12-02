@@ -10,7 +10,7 @@ CREATE TABLE formulario (
 /* Membros da equipe - pego da página sobre nós */
 
 CREATE TABLE membros (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT PRIMARY KEY,
     sobre_id INT,
     nome VARCHAR(255) NOT NULL,
     foto VARCHAR(255) NOT NULL,
@@ -47,13 +47,13 @@ WHERE
 /* Teste 2 */
 
     SELECT 
-    m.id 
-    m.nome
-    m.foto 
-    m.descricao 
-    l.email  
-    l.instagram 
-    l.linkedin 
+    m.id, 
+    m.nome,
+    m.foto, 
+    m.descricao,
+    l.email, 
+    l.instagram,
+    l.linkedin, 
     l.github 
 FROM 
     membros m
