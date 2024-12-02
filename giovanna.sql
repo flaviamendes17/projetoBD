@@ -1,7 +1,11 @@
 /* Tabela de formulário */
 
 CREATE TABLE formulario (
+<<<<<<< HEAD
     id SERIAL PRIMARY KEY,
+=======
+    id SERIAL PRIMARY KEY, 
+>>>>>>> 771ac825e303063155448eb23dfd5240d2ade562
     nome VARCHAR(100) NOT NULL, 
     email VARCHAR(100) NOT NULL, 
     mensagem TEXT NOT NULL
@@ -10,7 +14,7 @@ CREATE TABLE formulario (
 /* Membros da equipe - pego da página sobre nós */
 
 CREATE TABLE membros (
-    id INT PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     sobre_id INT,
     nome VARCHAR(255) NOT NULL,
     foto VARCHAR(255) NOT NULL,
