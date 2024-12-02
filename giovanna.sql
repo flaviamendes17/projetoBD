@@ -19,7 +19,7 @@ CREATE TABLE membros (
 );
 
 CREATE TABLE links (
-    id INT PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     membro_id INT,
     email VARCHAR(100), 
     instagram VARCHAR(100),
