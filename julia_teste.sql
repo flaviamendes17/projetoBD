@@ -45,9 +45,3 @@ DELETE FROM questoes WHERE id_simulado = 2;
 -- Exclui o simulado com id = 5. 
 DELETE FROM simulados WHERE id = 5;
 
--- Listar simulados com a quantidade de questões associadas:
-SELECT s.id, s.dificuldade, s.descricao, COUNT(q.id_questoes) AS total_questoes
-FROM simulados s
-LEFT JOIN questoes q ON s.id = q.id_simulado
-GROUP BY s.id, s.dificuldade, s.descricao
-ORDER BY s.id;

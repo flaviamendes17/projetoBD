@@ -20,6 +20,11 @@ Entidade = entrevistas:
 • foto = Atributo
 • entrevistador_id = Atributo
 
+Entidade = sobre_nos
+• id = Atributo
+• texto_principal = Atributo
+• imagem_principal = Atributo
+
 /* Tabelas da página de Simulados */
 
 Entidade = simulados:
@@ -30,3 +35,4 @@ Entidade = simulados:
 • texto_pergunta = Atributo
 • pergunta_texto = Atributo
 • url = Atributo
+
