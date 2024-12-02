@@ -1,4 +1,4 @@
-/* Formulário de formulário */
+/* Tabela de formulário */
 
 CREATE TABLE formulario (
     id INT AUTO_INCREMENT PRIMARY KEY, 
@@ -17,6 +17,8 @@ CREATE TABLE membros (
     descricao TEXT NOT NULL,
     FOREIGN KEY (sobre_id) REFERENCES sobre_nos(id)
 );
+
+/* Tabela de links que está ligada aos membros da equipe */
 
 CREATE TABLE links (
     id SERIAL PRIMARY KEY,

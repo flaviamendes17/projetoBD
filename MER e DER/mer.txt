@@ -29,10 +29,67 @@ Entidade = sobre_nos
 
 Entidade = simulados:
 • id = Atributo
-• nivel nivel_enum = Atributo
-• numero_pergunta = Atributo
-• titulo = Atributo
-• texto_pergunta = Atributo
-• pergunta_texto = Atributo
+• dificuldade = Atributo
+• descricao = Atributo
 • url = Atributo
+• url_imagem_nivel
 
+Entidade = questoes:
+• id_questoes = Atributo
+• titulo = Atributo
+• fonte_questao = Atributo
+• texto_auxiliar = Atributo
+• enunciado = Atributo
+• alternativa_a = Atributo
+• alternativa_b = Atributo
+• alternativa_c = Atributo
+• alternativa_d = Atributo
+• alternativa_e = Atributo
+• resposta_correta = Atributo
+• url_imagem = Atributo
+• id_simulado = Atributo
+
+/* Tabela da página de carreiras */
+
+Entidade = carreiras:
+• id_carreira = Atributo
+• nome_carreira = Atributo
+• img_url = Atributo
+• descricao_carreira = Atributo
+
+/* Tabela da página de dicas */
+
+Entidade = dicas:
+• id_dica = Atributo
+• categoria_dica = Atributo
+• numero_dica = Atributo
+• titulo_dica = Atributo
+• descricao_dica = Atributo
+• img_url = Atributo
+• link_img_url = Atributo
+• link_url = Atributo
+
+/* Tabela da página de notícias */
+
+Entidade = noticias:
+• id = Atributo
+• titulo = Atributo
+• descricao = Atributo
+• imagem_url = Atributo
+• autor = Atributo
+
+*/ Tabelas da página de contato */
+
+Entidade = formulario:
+• id = Atributo
+• nome = Atributo
+• email = Atributo
+• mensagen = Atributo
+
+Entidade = links:
+• id = Atributo
+• membro_id = Atributo
+• email = Atributo
+• instagram = Atributo
+• linkedin = Atributo
+• github = Atributo
