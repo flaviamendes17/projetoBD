@@ -18,6 +18,50 @@ CREATE TABLE membros (
     FOREIGN KEY (sobre_id) REFERENCES sobre_nos(id)
 );
 
+CREATE TABLE links (
+    id INT PRIMARY KEY,
+    membro_id INT,
+    email VARCHAR(100), 
+    instagram VARCHAR(100),
+    linkedin VARCHAR(100),
+    github VARCHAR(100),
+    FOREIGN KEY (membro_id) REFERENCES membros(id)
+);
+
+/* Teste 1 */
+
+SELECT
+    m.sobre_id,
+    m.nome,
+    m.foto,
+    m.descricao,
+    (SELECT l.email FROM links l WHERE l.membro_id = m.id) AS email,
+    (SELECT l.instagram FROM links l WHERE l.membro_id = m.id) AS instagram,
+    (SELECT l.linkedin FROM links l WHERE l.membro_id = m.id) AS linkedin,
+    (SELECT l.github FROM links l WHERE l.membro_id = m.id) AS github
+FROM
+    membros m
+WHERE
+    m.id = 1;
+
+/* Teste 2 */
+
+    SELECT 
+    m.id 
+    m.nome
+    m.foto 
+    m.descricao 
+    l.email  
+    l.instagram 
+    l.linkedin 
+    l.github 
+FROM 
+    membros m
+LEFT JOIN 
+    links l
+ON 
+    m.id = l.membro_id;
+
 /* Adicionando as informações pedidas no formulário */
 
 INSERT INTO contato (nome, email, mensagem) VALUES ('Thiago', 'thiago@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.');
