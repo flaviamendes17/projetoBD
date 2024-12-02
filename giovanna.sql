@@ -1,7 +1,7 @@
 /* Tabela de formulário */
 
 CREATE TABLE formulario (
-    id INT AUTO_INCREMENT PRIMARY KEY, 
+    id SERIAL PRIMARY KEY, 
     nome VARCHAR(100) NOT NULL, 
     email VARCHAR(100) NOT NULL, 
     mensagem TEXT NOT NULL
@@ -10,7 +10,7 @@ CREATE TABLE formulario (
 /* Membros da equipe - pego da página sobre nós */
 
 CREATE TABLE membros (
-    id INT PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     sobre_id INT,
     nome VARCHAR(255) NOT NULL,
     foto VARCHAR(255) NOT NULL,
@@ -57,11 +57,11 @@ ON
 
 /* Adicionando as informações pedidas no formulário */
 
-INSERT INTO contato (nome, email, mensagem) VALUES ('Thiago', 'thiago@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.');
-INSERT INTO contato (nome, email, mensagem) VALUES ('Giovanna', 'giovanna@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.');
-INSERT INTO contato (nome, email, mensagem) VALUES ('Maria', 'maria@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.');
-INSERT INTO contato (nome, email, mensagem) VALUES ('Marcelo', 'marcelo@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.');
-INSERT INTO contato (nome, email, mensagem) VALUES ('Eduardo', 'eduardo@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.');
+INSERT INTO formulario (nome, email, mensagem) VALUES ('Thiago', 'thiago@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.');
+INSERT INTO formulario (nome, email, mensagem) VALUES ('Giovanna', 'giovanna@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.');
+INSERT INTO formulario (nome, email, mensagem) VALUES ('Maria', 'maria@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.');
+INSERT INTO formulario (nome, email, mensagem) VALUES ('Marcelo', 'marcelo@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.');
+INSERT INTO formulario (nome, email, mensagem) VALUES ('Eduardo', 'eduardo@gmail.com', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.');
 
 /* Adicionando os integrantes da tabela de membros - pego da página sobre nós */
 
