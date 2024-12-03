@@ -178,5 +178,7 @@ FUNÇÃO:
 FUNÇÃO: 
 •Tabela Notícias.
 ```
-
+## Agradecimentos e Conclusão
+Agradecemos a todos que colaboraram para a realização deste projeto. Cada membro da equipe contribuiu com suas habilidades para construir um portal funcional e organizado. Este trabalho é fruto de esforço coletivo e aprendizado ao longo do processo.
+Esperamos que o portal seja útil e atenda às suas necessidades. Obrigado por conferir nosso projeto! 😉✌❤
 
