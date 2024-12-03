@@ -130,7 +130,7 @@ github
 
 ```
 ## DER
-![Texto Alternativo](https://s11.aconvert.com/convert/p3r68-cdx67/ha0t3-3fgcu.jpg)
+![Texto Alternativo](https://s10.aconvert.com/convert/p3r68-cdx67/an04g-r4iaj.jpg)
 
 ## Conheça a equipe! 🌐📌
 
