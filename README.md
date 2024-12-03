@@ -1,8 +1,19 @@
-![Texto Alternativo](https://upload.wikimedia.org/wikipedia/commons/8/8c/SENAI_S%C3%A3o_Paulo_logo.png)
+<div align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/SENAI_S%C3%A3o_Paulo_logo.png" alt="Texto Alternativo" width="200">
+</div>
 
 <h1 align="center"> PORTAL MATÉRIAS - INGLÊS </h1>
 
 Este projeto tem como objetivo desenvolver e implementar um banco de dados para o portal, integrando suas funcionalidades e conteúdo de forma estruturada. A estrutura do banco foi planejada para ser funcional, eficiente e pronta para consultas e futuras aplicações.
+
+## LINKS
+  <ul>
+    <li><a href="https://www.canva.com/design/DAGXm_HE0gs/tM9J_H3gmbgxlceWwRf9RQ/edit?utm_content=DAGXm_HE0gs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Canva Design- Slide</a></li>
+    <li><a href="https://site-ingles-theta.vercel.app/" target="_blank">Site Inglês</a></li>
+  </ul>
+</div>
+
+
 ## MER
 ##### ENTIDADES
 ```
