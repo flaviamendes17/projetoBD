@@ -1,11 +1,7 @@
 /* Tabela de formulário */
 
 CREATE TABLE formulario (
-<<<<<<< HEAD
-    id SERIAL PRIMARY KEY,
-=======
     id SERIAL PRIMARY KEY, 
->>>>>>> 771ac825e303063155448eb23dfd5240d2ade562
     nome VARCHAR(100) NOT NULL, 
     email VARCHAR(100) NOT NULL, 
     mensagem TEXT NOT NULL
